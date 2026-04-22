@@ -52,17 +52,25 @@ font-size:16px;
 padding:20px;
 }
 
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fill,minmax(140px,1fr));
-gap:15px;
+.row{
+display:flex;
+overflow-x:auto;
+gap:12px;
+padding:10px;
+scroll-behavior:smooth;
+}
+
+.row::-webkit-scrollbar{
+display:none;
 }
 
 .card{
+min-width:140px;
 background:#1c1c1c;
 border-radius:10px;
 overflow:hidden;
 text-align:center;
+flex-shrink:0;
 }
 
 .card img{
@@ -119,11 +127,11 @@ cards[i].style.display="none";
 <div class="section">
 <h2>HOLLYWOOD MOVIES</h2>
 
-<div class="grid">
+<div class="row">
 
 <div class="card">
 
-<img src="https://i.postimg.cc/yYdLnNKn/IMG-20260311-WA0003.jpg'">
+<img src="https://i.postimg.cc/yYdLnNKn/IMG-20260311-WA0003.jpg">
 <h3>THE HOUSEMAID</h3>
 
 <a href="https://drive.google.com/file/d/1PUmQuCLPVIzTXQSXiCT_nXATwxAXBzaT/view?usp=drivesdk">Watch</a>
@@ -136,7 +144,7 @@ cards[i].style.display="none";
 </div>
 
 <div class="card">
-<img src="https://i.postimg.cc/fWFb7xgc/images-(2).jpg'">
+<img src="https://i.postimg.cc/fWFb7xgc/images-(2).jpg">
 <h3>How To Train Your Dragon</h3>
 <a href="https://drive.google.com/file/d/1PFS6bHAJm-t_qHQXAavx4yon3KU_eEYq/view?usp=sharing">Watch</a>
 </div>
@@ -155,13 +163,13 @@ cards[i].style.display="none";
 </div>
 
   <div class="card">
-<img src="https://i.postimg.cc/2yjXVbny/War-Machine-2026-Netflix-Movie-Review.jpg'">
+<img src="https://i.postimg.cc/2yjXVbny/War-Machine-2026-Netflix-Movie-Review.jpg">
 <h3>War Machine</h3>
 <a href="https://drive.google.com/file/d/1404qU-MAIDMNxy0PHt_rMxik57S_T23o/view?usp=sharing">Watch</a>
 </div>
 
 <div class="card">
-<img src=https://i.postimg.cc/Pq91gp8v/la-la-land-4k-img.jpg'">
+<img src=https://i.postimg.cc/Pq91gp8v/la-la-land-4k-img.jpg">
 <h3>La La land</h3>
 <a href="https://drive.google.com/file/d/1K_jTru6C52ylujPjeW14V3kez1r4q8Sv/view?usp=sharing">Watch</a>
 </div>
@@ -175,7 +183,7 @@ cards[i].style.display="none";
 <div class="section">
 <h2>INDIAN FILMS</h2>
 
-<div class="grid">
+<div class="row">
 
 <div class="card">
 
@@ -186,7 +194,7 @@ cards[i].style.display="none";
 </div>
 
 <div class="card">
-<img src="https://i.postimg.cc/QdZ0DJ5q/IMG-20260311-WA0004.jpg'"> 
+<img src="https://i.postimg.cc/QdZ0DJ5q/IMG-20260311-WA0004.jpg"> 
 <h3>Vash Level 2</h3>
 <a href="https://t.me/HDMoviesAnimeKNVS/13">Watch</a>
 </div>
@@ -198,7 +206,7 @@ cards[i].style.display="none";
 
 
  <div class="card">
-<img src="https://i.postimg.cc/85f5wMf4/Tanvi-the-great-img.jpg'">
+<img src="https://i.postimg.cc/85f5wMf4/Tanvi-the-great-img.jpg">
 <h3>Tanvi The Great</h3>
 <a href="https://drive.google.com/file/d/1Nci2yeAW4pQwavVBYMqPMmwsgAEe1CKJ/view?usp=drive_link">Watch</a>
 </div>
@@ -212,18 +220,18 @@ cards[i].style.display="none";
 <div class="grid">
 
 <div class="card">
-<img src="https://i.postimg.cc/dV47tJp4/IMG-20260311-WA0005.jpg'">
+<img src="https://i.postimg.cc/dV47tJp4/IMG-20260311-WA0005.jpg">
 <h3>A Silent Voice</h3>
 <a href="https://drive.google.com/file/d/1TVjz5Wffzz3yTap7TP1RVUEaaGeHPMQO/view?usp=drivesdk">Watch</a>
 </div>
 
 <div class="card">
-<img src="https://i.postimg.cc/L5wTWzBP/IMG-20260311-WA0006.jpg'">
+<img src="https://i.postimg.cc/L5wTWzBP/IMG-20260311-WA0006.jpg">
 <h3>Demon Slayer</h3>
 <a href="https://t.me/HDMoviesAnimeKNVS/16">Watch</a>
 </div>
 <div class="card">
-<img src="https://i.postimg.cc/RV07cp0Q/IMG-20260313-WA0049.jpg'">
+<img src="https://i.postimg.cc/RV07cp0Q/IMG-20260313-WA0049.jpg">
 <h3>I Want Eat Your Pencreas</h3>
 <a href="https://drive.google.com/file/d/1nOqarHQKI2XNbh4tcDC6jeTdlOkgPjEm/view?usp=drivesdk">Watch</a>
 </div>
@@ -235,10 +243,10 @@ cards[i].style.display="none";
 <div class="section">
 <h2>Cartoon</h2>
 
-<div class="grid">
+<div class="row">
 
 <div class="card">
-<img src="https://i.postimg.cc/cLmxMTB9/IMG-20260311-WA0007.jpg'">
+<img src="https://i.postimg.cc/cLmxMTB9/IMG-20260311-WA0007.jpg">
 <h3>Doraemon</h3>
 <a href="https://drive.google.com/file/d/1TVjz5Wffzz3yTap7TP1RVUEaaGeHPMQO/view?usp=drivesdk">Watch</a>
 </div>
