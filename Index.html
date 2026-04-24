@@ -96,6 +96,17 @@ font-weight:bold;
 </style>
 
 <script>
+  <script>
+window.onload = function () {
+    const params = new URLSearchParams(window.location.search);
+    const searchQuery = params.get("search");
+
+    if (searchQuery) {
+        document.getElementById("search").value = searchQuery;
+        searchMovies();
+    }
+};
+</script>
 function searchMovies(){
 let input=document.getElementById("search").value.toLowerCase();
 let cards=document.getElementsByClassName("card");
